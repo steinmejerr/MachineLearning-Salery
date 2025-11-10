@@ -29,8 +29,8 @@ def main():
 
     # Extract model parameters
     experience_years = 4.5
-    pred = float(model.predict(pd.DataFrame({'YearsExperience':[experience_years]}))[0])
-    print(f"Forventet løn for {experience_years} års erfaring: {pred:.2f}")
+    pred_expreienceyears = float(model.predict(pd.DataFrame({'YearsExperience':[experience_years]}))[0])
+    print(f"Forventet løn for {experience_years} års erfaring: {pred_expreienceyears:.2f}")
 
     # Plot regression line over data range
     x_min, x_max = df["YearsExperience"].min(), df["YearsExperience"].max()
